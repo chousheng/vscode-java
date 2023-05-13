@@ -39,7 +39,6 @@
     "multi-root ready"
   ],
   "activationEvents": [
-    "onLanguage:java",
     "workspaceContains:pom.xml",
     "workspaceContains:*/pom.xml",
     "workspaceContains:build.gradle",
@@ -1098,16 +1097,6 @@
           "type": "boolean",
           "markdownDescription": "Specify whether to replace all the occurrences of the subtype with the new extracted interface.",
           "default": true
-        },
-        "redhat.telemetry.enabled": {
-          "type": "boolean",
-          "default": null,
-          "markdownDescription": "Enable usage data and errors to be sent to Red Hat servers. Read our [privacy statement](https://developers.redhat.com/article/tool-data-collection).",
-          "scope": "window",
-          "tags": [
-            "usesOnlineServices",
-            "telemetry"
-          ]
         }
       }
     },
@@ -1437,15 +1426,15 @@
     "@types/node": "^16.11.7",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "@types/vscode-webview": "^1.57.0",
     "@types/semver": "^7.3.8",
     "@types/sinon": "^10.0.12",
     "@types/vscode": "^1.77.0",
+    "@types/vscode-webview": "^1.57.0",
     "@types/winreg": "^1.2.30",
     "@types/winston": "^2.4.4",
-    "@vscode/test-electron": "^2.1.5",
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
+    "@vscode/test-electron": "^2.1.5",
     "css-loader": "^6.7.3",
     "eslint": "^8.13.0",
     "eslint-webpack-plugin": "^3.2.0",
@@ -1465,10 +1454,10 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
+    "@redhat-developer/vscode-redhat-telemetry": "^0.6.1",
     "@vscode/codicons": "^0.0.32",
     "@vscode/webview-ui-toolkit": "1.2.2",
     "chokidar": "^3.5.3",
-    "@redhat-developer/vscode-redhat-telemetry": "^0.6.1",
     "expand-home-dir": "^0.0.3",
     "fmtr": "^1.1.2",
     "fs-extra": "^8.1.0",

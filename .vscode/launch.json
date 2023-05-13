@@ -11,9 +11,8 @@
 			"args": ["--extensionDevelopmentPath=${workspaceRoot}" ],
 			"env": {
 				"DEBUG_VSCODE_JAVA":"true",
-				"VSCODE_REDHAT_TELEMETRY_DEBUG":"true"
+				"VSCODE_REDHAT_TELEMETRY_DEBUG":"false"
 			},
-			"stopOnEntry": false,
 			"sourceMaps": true,
 			"outFiles": [ "${workspaceRoot}/dist/**/*.js" ],
 			"preLaunchTask": "npm: watch",
@@ -28,13 +27,12 @@
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
 			"args": ["--extensionDevelopmentPath=${workspaceRoot}" ],
-			"stopOnEntry": false,
 			"sourceMaps": true,
 			"outFiles": [ "${workspaceRoot}/dist/**/*.js" ],
 			"env": {
 				"SERVER_PORT": "3333",
 				"DEBUG_VSCODE_JAVA":"true",
-				"VSCODE_REDHAT_TELEMETRY_DEBUG":"true"
+				"VSCODE_REDHAT_TELEMETRY_DEBUG":"false"
 			},
 			"preLaunchTask": "npm: watch"
 		},
@@ -45,13 +43,12 @@
 			"runtimeExecutable": "${execPath}",
 			"debugWebviews": true,
 			"args": ["--extensionDevelopmentPath=${workspaceRoot}" ],
-			"stopOnEntry": false,
 			"sourceMaps": true,
 			"outFiles": [ "${workspaceRoot}/dist/**/*.js" ],
 			"env": {
 				"JDTLS_CLIENT_PORT": "5036",
 				"DEBUG_VSCODE_JAVA":"true",
-				"VSCODE_REDHAT_TELEMETRY_DEBUG":"true"
+				"VSCODE_REDHAT_TELEMETRY_DEBUG":"false"
 			},
 			"preLaunchTask": "npm: watch",
 			"rendererDebugOptions": {
@@ -65,13 +62,12 @@
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
 			"args": ["--extensionDevelopmentPath=${workspaceRoot}" ],
-			"stopOnEntry": false,
 			"sourceMaps": true,
 			"outFiles": [ "${workspaceRoot}/dist/**/*.js" ],
 			"env": {
 				"SYNTAXLS_CLIENT_PORT": "5037",
 				"DEBUG_VSCODE_JAVA":"true",
-				"VSCODE_REDHAT_TELEMETRY_DEBUG":"true"
+				"VSCODE_REDHAT_TELEMETRY_DEBUG":"false"
 			},
 			"preLaunchTask": "npm: watch"
 		},
@@ -81,7 +77,6 @@
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
 			"args": ["--extensionDevelopmentPath=${workspaceRoot}" ],
-			"stopOnEntry": false,
 			"sourceMaps": true,
 			"outFiles": [ "${workspaceRoot}/dist/**/*.js" ],
 			"env": {
@@ -103,7 +98,6 @@
 				"--extensionDevelopmentPath=${workspaceRoot}",
 				"--extensionTestsPath=${workspaceRoot}/out/test/standard-mode-suite"
 			],
-			"stopOnEntry": false,
 			"sourceMaps": true,
 			"outFiles": ["${workspaceRoot}/out/**/*.js"],
 			"preLaunchTask": "prepareStandardTest",
@@ -120,7 +114,6 @@
 				"--extensionDevelopmentPath=${workspaceRoot}",
 				"--extensionTestsPath=${workspaceRoot}/out/test/lightweight-mode-suite"
 			],
-			"stopOnEntry": false,
 			"sourceMaps": true,
 			"outFiles": ["${workspaceRoot}/out/**/*.js"],
 			"preLaunchTask": "prepareLightweightTest",
